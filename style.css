@@ -1,0 +1,1164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* cursor: none; */
+}
+@font-face {
+    font-family: classy;
+    src: url(./assets/Classy\ Vogue\ Stylish\ Serif\ Font.otf);
+}
+@font-face {
+    font-family: sign;
+    src: url(./assets/Dalmatins.otf);
+}
+@font-face {
+    font-family: monument;
+    src: url(./assets/monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Regular.otf);
+}
+@font-face {
+    font-family:gun ;
+    src: url(./assets/Gundogan\ -\ Demo.ttf);
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #F8F8F8;
+}
+#main{
+    background-color: #F8F8F8  ;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 1px;
+    
+    overflow-x: hidden;
+}
+#nav{
+    width: 105vw;
+    height: 12vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-right: 30px;
+    /* padding-left: 160px; */
+    border-top: 3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
+    /* color: white; */
+}
+#nav h3{
+    display: block;
+}
+#nav h2{
+    /* background-color: aqua; */
+    width: 24vw;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+    border-right: 3px solid rgb(0, 0, 0);
+    font-size: 25px;
+    /* padding-left: 30px; */
+    /* margin-left: 150px; */
+    /* font-family: monument; */
+   
+}
+#nav h1{
+    font-size: 35px;
+    text-wrap: nowrap;
+    width: 13rem;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-weight: 600;
+    font-family: monument;
+    letter-spacing: -1.1px;
+    
+}
+#nav h1::after{
+    content: "©";
+    position: absolute;
+    left: 23%;
+    font-size: 19px;
+    color: #000;
+    top: 8%;
+    font-weight: 400;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#nav h1::before{
+    content: "Where every outfit tells a story";
+    position: absolute;
+    left: 5%;
+    font-size: 23px;
+    color: #767474;
+    top: 12.6%;
+    font-weight: 300;
+   font-family: gun;
+}
+#nav h2:nth-last-child(1){
+    font-size: 26px;
+    /* background-color: rebeccapurple;  */
+    /* top: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 40px;
+}
+#main #center{
+    height: 85%;
+    width: 100%;
+    /* background-color: chocolate; */
+    padding: 5vh;
+}
+#content{
+    height: 100%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: aqua; */
+    padding: 3vw;
+    margin-bottom: 2vh;
+    
+}
+#over1{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-bottom: 1vw;
+   
+}
+#over1 h1{
+    font-family: monument;
+    font-size: 5.9vh;
+    /* mix-blend-mode: c; */
+}
+#over1 h2{
+    font-size: 2vw;
+    font-weight: 100;
+    font-family: monument;
+    padding: 2vw 2.4vw;
+    /* background-color: blueviolet; */
+    border-radius: 50%;
+    border: 2px solid white;
+}
+#over2 h1{
+    background-color: white;
+    width: 100%;
+    height: 3px;
+}
+#over2 .elems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    /* padding-top: 1vw; */
+}
+#over2 .elems img{
+    width: 70px;
+    height: 50px;
+}
+#over2 .elems h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4vw;
+    font-weight: 300;
+
+}
+#scroll{
+    width: 110%;
+    height: max-content;
+    /* backgrund-color: yellow; */
+    /* padding: 1vw; */
+    white-space: nowrap;
+    /* padding-top: 1px; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#scroll #container{
+    height: 100%;
+    width: 110%;
+    /* padding:4vh ; */
+    /* background-color: blue; */
+    display: inline-block ;
+    margin-bottom: 2vh;
+    /* position:relative; */
+    /* z-index: 1; */
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    object-fit: cover; 
+    object-position: top;
+    /* z-index: 99; */
+    
+    
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#alpha{
+    height: 9vh;
+    width: 100%;
+    /* background-color: tan; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1px;
+}
+#alpha h5{
+    font-family:  monument;
+    left:2%;
+    letter-spacing: 3px;
+    position: absolute;
+    margin-left: 10px;
+    font-size: 3vh;
+    border-bottom: 3px solid black;
+    font-style: italic;
+    margin-right:  10vw;
+}
+#alpha h6{
+    font-family:  'Arial Narrow Bold', sans-serif;
+    /* margin-left: 10px; */
+    font-size: 2vh;
+    /* border-bottom: 3px solid black; */
+    font-style: italic;
+    margin-left: 10px;
+    letter-spacing: 5px;
+    /* border-radius: rgba(0, 0, 0, 0); */
+    padding: 1.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-transform: uppercase;
+    border:1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+    }
+    #alpha h6:hover{
+        border:2px solid black;
+        scale: 1.3;
+
+    }
+#page2{
+    width: 100%;
+    height: 100%;
+    padding: 10vh;
+    display: flex;
+    gap: 10vh;
+}
+#page2 #img1 img{
+    height: 120vh;
+    width: 90vh;
+
+}
+#page2 #img2 img{
+    height: 80vh;
+    width: 65vh;
+
+}
+#page2 h4{
+    font-family: gun;
+    font-size: 60px;
+}
+#page2 h3{
+    font-family: gun;
+    font-size: 60px;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    margin-top: 10px;
+}
+#page2 p{
+    font-family: gun;
+    font-size: 25px;
+}
+#page3{
+    width: 1520px;
+    height: 820px;
+    display: flex;
+    padding: 100px;
+    margin-top: 400px;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(19, 141, 141); */
+}
+#page3 img{
+    height: 85vh;
+    width: 65vh;
+ 
+    /* background-color: rgb(166, 202, 234); */
+}
+#page3 .text{
+    width: 400px;
+    height: 400px;
+    /* background-color: thistle; */
+    user-select: none;
+    pointer-events: none;
+    padding: 20vh;
+    margin-left: 20vh;
+    font-size: 1.2em;
+    
+    /* padding-left: 40vh;
+    padding-bottom: 50vh; */
+    animation: animee 7.5s linear infinite;
+    /* position: fixed; */
+}
+#page3 .text span{
+    display: inline-block;
+    position: absolute;
+    /* margin-left: 2vh; */
+    top: 2700px;
+    left: 359px;
+    text-transform: uppercase;
+    transform-origin: 0 130px;
+    /* padding-left: px; */
+    font-family: monument;
+    /* background-color: yellow; */
+    
+}
+#page3  p{
+    /* display: none; */
+    position: absolute;
+    width: 50vh;
+    font-family: gun;
+    font-size: 3vh;
+    font-weight: 100;
+    color: #4d4848;
+    /* position: relative; */
+    margin-top: 60vh;
+    margin-left: 10vh;
+    /* background-color: blueviolet; */
+    
+}
+#page3 h6{
+    /* background-color: yellow; */
+    /* margin-right: 5vh; */
+    left: 0;
+    margin-left: 38vh;
+    position: absolute;
+    margin-top:3vh;
+    width: 50vh;
+    /* z-index: 1; */
+}
+#page3 h6 img{
+    /* display: none; */
+    width: 12vh;
+    height: 12vh;
+    /* position: absolute; */
+    /* z-index: 9; */
+    margin-right: 80vh;
+}
+/* @keyframes animee { 
+    0%{
+        position: fixed;
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+/* } */
+#page4 {
+    width: 100%;
+    height: 100%;
+    /* background-color: chartreuse; */
+    position: relative;
+    padding: 0 8vh;
+}
+#page4>h1{
+    font-family: monument;
+    font-size: 7vh;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 6vh;
+}
+#page4 #elems{
+    height: 10vw;
+    width: 100%;
+    /* background-color: violet; */
+    border-top: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+#page4 #elems:nth-last-child(1){
+    border-bottom: 3px solid black;
+}
+#page4 #elems h2{
+    text-transform: uppercase;
+    font-family: gun;
+    width: 20px;
+    padding: 0 3vh;
+}
+#page4 #elems #elems-elem2{
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    /* width: 20px; */
+    padding-right: 8vh;
+    font-size: 2vh;
+    line-height: 1.3vh;
+    width: 39% ;
+}
+#page4 #elems #elems-elem2>h4{
+    font-size: 3.5vh;
+    font-weight: 400;
+    font-family: sans-serif;
+    
+}
+#page4 #elems #elems-elem2>h5{
+    font-size: 2vh;
+    font-weight: 800;
+    
+}
+#page4 #elems img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow:  black 6px 5px 12px;
+    border-radius: 10%;
+    position: absolute;
+    display: flex;
+    z-index: 9;
+    top: -30%;
+    left: 15%;
+    opacity: 0;
+    transition: all ease 0.1s;
+    animation-name: phonime;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    scale: 0.8;
+}
+#page4 #elems img:hover{
+    opacity: 1;
+    scale:1.1;
+    cursor: pointer;
+    /* background: blue; */
+    /* background-color: rgb(53, 57, 57); */
+    
+}
+@keyframes phonime {
+    from{
+        transform: translateX(20%);
+        
+    }
+    to{
+        transform: translateX(60%);
+    }
+}
+#marque{
+    /* background-color: chartreuse; */
+    width: 100%;
+    /* height: 20%; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    padding: 1vw;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+#marque h3{
+    display: inline-block;
+    font-size: 7vh;
+    font-family: monument;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    -webkit-text-stroke:  black 1px;
+    color: transparent;
+    /* background-color: brown; */
+    margin-right: 16px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes move {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+    transform: translateX(Calc(-100% - 21px));
+    }
+}
+#foter{
+    width: 100%;
+    /* background-color: wheat; */
+    height: 100%;
+    display: flex;
+    border: 2px black;
+    
+}
+#foter #infooter{
+    width: 100%;
+    height: 90%;
+    margin: 5vh;
+    /* background-color: rgb(231, 98, 98); */
+    /* display: flex; */
+}
+/* #foter #img img{
+    width: 400px;
+    height: 500px;
+    box-shadow: rgb(0, 0, 0) 7px 7px 7px;
+    border-radius: 2%;
+    object-fit: cover;
+    object-position: center;
+}
+#foter #img h1{
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    font-family: sign;
+    text-transform: capitalize;
+    text-shadow: 0px 2px 2px rgba(22, 21, 21, 0.683);
+
+
+} */
+#foter h2{
+    font-family: gun;
+    text-align: center;
+    width: 100%;
+    font-size: 80px;
+    text-shadow: rgb(137, 136, 136) 5px 4px 4px;
+    color: #161515;
+}
+#foter #infooter img{
+    width: 380px;
+    height: 470px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5%;
+    box-shadow: rgb(137, 136, 136) 9px 7px 9px;
+}
+#foter #infooter #workelem{
+    display: flex;
+    margin-top: 6vh;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    padding-left: 2vh;
+    padding-right: 2vh;
+
+
+}
+
+#foter #infooter #workelem #work h3{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 5vh;
+    font-family: monument;
+    color: #2f2a2a;
+    text-shadow: rgb(137, 136, 136) 9px 7px 9px;
+
+}
+#foter #infooter #workelem #work p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 3vh;
+    font-family: gun;
+    color: #747474;
+    /* text-shadow: rgb(137, 136, 136) 9px 7px 9px; */
+
+}
+#foter #infooter #workelem #work img{
+    transition: ease 0.5s;
+    scale: 0.9s;
+}
+#foter #infooter #workelem #work img:hover{
+    scale: 1.1;
+}
+#page5{
+    height: 50%;
+}
+@media (max-width:600px){
+    #nav{
+        width: 105vw;
+        height: 8vh;
+        position: relative;
+        /* background-color: aquamarine; */
+        /* display: flex; */
+        /* align-items: center; */
+        justify-content: space-between;
+        margin-top: 20px;
+        /* padding-right: 30px; */
+        /* padding-left: 160px; */
+        border-top: 3px solid rgb(0, 0, 0);
+        border-bottom: 3px solid rgb(0, 0, 0);
+        /* color: white; */
+    }
+    #nav h2{
+        display: none;
+        /* background-color: aqua; */
+        width: 16vw;
+        height: 12vh;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        text-wrap: nowrap;
+        border-right: 3px solid rgb(0, 0, 0);
+        font-size: 2px;
+        /* padding-left: 30px; */
+        /* margin-left: 150px; */
+        /* font-family: monument; */
+       
+    }
+    #nav h1{
+        /* display: none; */
+        font-size: 20px;
+        text-wrap: nowrap;
+        width: 23rem;
+        margin-right: 5vh;
+        height: 12vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        left: -10%;
+        /* background-color: #F8F8F8; */
+        /* margin-left: 80px; */
+        padding: -40px;
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        font-weight: 600;
+        font-family: monument;
+        letter-spacing: -1.1px;
+        
+    }
+    #nav h1::after{
+        display:none;
+        content: "©";
+        position: absolute;
+        left: 23%;
+        font-size: 19px;
+        color: #000;
+        top: 8%;
+        font-weight: 400;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #nav h3{
+        position: absolute;
+        left: 80%;
+    }
+    #nav h1::before{
+        content: "Where every outfit tells a story";
+        position: absolute;
+        left: 5%;
+        font-size: 23px;
+        color: #767474;
+        top: 12.6%;
+        font-weight: 300;
+       font-family: gun;
+
+       display: none;
+    }
+    #nav h2:nth-last-child(1){
+        font-size: 26px;
+        /* background-color: rebeccapurple;  */
+        /* top: 0; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 40px;
+        display: none;
+    }
+    #main #center{
+        height: 65%;
+        width: 100%;
+        /* background-color: chocolate; */
+        padding: 5vh;
+    }
+    #content{
+        height: 100%;
+        width: 100%;
+        /* background-color: blueviolet; */
+        position: relative;
+    }
+    #content video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #overlay{
+        height: fit-content;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        /* background-color: aqua; */
+        padding: 3vw;
+        margin-bottom: 2vh;
+        
+    }
+    #over1{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        padding-bottom: 1vw;
+       
+    }
+    #over1 h1{
+        font-family: monument;
+        font-size: 3vh;
+        /* mix-blend-mode: c; */
+        font-weight: 100;
+    }
+    #over1 h2{
+        font-size: 2vw;
+        font-weight: 100;
+        font-family: monument;
+        padding: 2vw 2.4vw;
+        /* background-color: blueviolet; */
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+    #over2 h1{
+        background-color: white;
+        width: 100%;
+        height: 3px;
+    }
+    #over2 .elems {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        /* padding-top: 1vw; */
+    }
+    #over2 .elems img{
+        width: 40px;
+        height: 30px;
+    }
+    #over2 .elems h3{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2vw;
+        font-weight: 300;
+    
+    }
+    #scroll{
+        width: 110%;
+        height: max-content;
+        /* backgrund-color: yellow; */
+        /* padding: 1vw; */
+        white-space: nowrap;
+        /* padding-top: 1px; */
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    #scroll #container{
+        height: 100%;
+        width: 110%;
+        /* padding:4vh ; */
+        /* background-color: blue; */
+        display: inline-block ;
+        margin-bottom: 2vh;
+        /* position:relative; */
+        /* z-index: 1; */
+        animation-name: anime;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    #scroll img{
+        height: 15vh;
+        width: 15vh;
+        border-radius: 50%;
+        object-fit: cover; 
+        object-position: top;
+        /* z-index: 99; */
+    }
+    #alpha{
+        height: 9vh;
+        width: 100%;
+        /* background-color: tan; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:1px;
+    }
+    #alpha h5{
+        display: none;
+        font-family:  monument;
+        left:0%;
+        letter-spacing: 3px;
+        position: absolute;
+        /* margin-left: 10px; */
+        font-size: 1vh;
+        border-bottom: 1px solid black;
+        font-style: italic;
+        /* margin-right:  10vw; */
+    }
+    #alpha h6{
+        display: none;
+        font-family:  'Arial Narrow Bold', sans-serif;
+        /* margin-left: 10px; */
+        font-size:2px;
+        width: 100vh;
+        letter-spacing: -10px;
+        /* border-bottom: 3px solid black; */
+        font-style: italic;
+        /* margin-left: 10px; */
+        /* letter-spacing: 5px; */
+        /* border-radius: rgba(0, 0, 0, 0); */
+        /* padding: 1.5vh; */
+        /* display: flex; */
+        align-items:flex-start;
+        flex-shrink: none;
+        background-color: yellowgreen;
+        justify-content: center;
+        border-radius: 50%;
+        text-transform: uppercase;
+        border:1px solid rgba(0, 0, 0, 0);
+        cursor: pointer;
+        transition: all ease-in 0.2s;
+        }
+        #alpha h6:hover{
+            border:2px solid black;
+            scale: 1.3;
+    
+        }
+    #page2{
+        top: 90%;
+        left: -8%;
+        width: 100%;
+        height: 100%;
+        padding: 10vh;
+        margin-right: 51vh;
+        display: flex;
+        gap: -10vh;
+        position: absolute;
+        /* margin-bottom: 300vh; */
+    }
+    #page2 #img1 img{
+        height: 50vh;
+        width: 25vh;
+    
+    }
+    #page2 #img2 img{
+        height: 40vh;
+        width: 25vh;
+        background-color: yellowgreen;
+    
+    }
+    #page2 h4{
+        font-family: gun;
+        font-size: 30px;
+    }
+    #page2 h3{
+        font-family: gun;
+        font-size: 20px;
+        text-transform: capitalize;
+        letter-spacing: 4px;
+        margin-top: 10px;
+    }
+    #page2 p{
+        font-family: gun;
+        font-size: 10px;
+    }
+    #page3{
+        width: 1520px;
+        height: 820px;
+        display: none;
+        padding: 100px;
+        margin-top: 400px;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: rgb(19, 141, 141); */
+    }
+    #page3 img{
+        height: 85vh;
+        width: 65vh;
+     
+        /* background-color: rgb(166, 202, 234); */
+    }
+    #page3 .text{
+        width: 400px;
+        height: 400px;
+        /* background-color: thistle; */
+        user-select: none;
+        pointer-events: none;
+        padding: 20vh;
+        margin-left: 20vh;
+        font-size: 1.2em;
+        
+        /* padding-left: 40vh;
+        padding-bottom: 50vh; */
+        animation: animee 7.5s linear infinite;
+        /* position: fixed; */
+    }
+    #page3 .text span{
+        display: inline-block;
+        position: absolute;
+        /* margin-left: 2vh; */
+        top: 2700px;
+        left: 359px;
+        text-transform: uppercase;
+        transform-origin: 0 130px;
+        /* padding-left: px; */
+        font-family: monument;
+        /* background-color: yellow; */
+        
+    }
+    #page3  p{
+        /* display: none; */
+        position: absolute;
+        width: 50vh;
+        font-family: gun;
+        font-size: 3vh;
+        font-weight: 100;
+        color: #4d4848;
+        /* position: relative; */
+        margin-top: 60vh;
+        margin-left: 10vh;
+        /* background-color: blueviolet; */
+        
+    }
+    #page3 h6{
+        /* background-color: yellow; */
+        /* margin-right: 5vh; */
+        left: 0;
+        margin-left: 38vh;
+        position: absolute;
+        margin-top:3vh;
+        width: 50vh;
+        /* z-index: 1; */
+    }
+    #page3 h6 img{
+        /* display: none; */
+        width: 12vh;
+        height: 12vh;
+        /* position: absolute; */
+        /* z-index: 9; */
+        margin-right: 80vh;
+    }
+    #page4 {
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        height: 100%;
+        /* background-color: chartreuse; */
+        position: relative;
+        padding: 0 8vh;
+    }
+    #page4>h1{
+        font-family: monument;
+        font-size: 3.4vh;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+    }
+    #page4 #elems{
+        height: 10vw;
+        width: 100%;
+        /* background-color: violet; */
+        border-top: 2px solid rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        justify-content: space-between;
+        position: relative;
+    }
+    #page4 #elems:nth-last-child(1){
+        border-bottom: 2px solid black;
+    }
+    #page4 #elems h2{
+        text-transform: uppercase;
+        font-family: gun;
+        width: 20px;
+        padding: 0 3vh;
+    }
+    #page4 #elems #elems-elem2{
+        text-transform: capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        /* width: 20px; */
+        padding-right: 8vh;
+        font-size: 1vh;
+        line-height: 1.3vh;
+        width: 39% ;
+    }
+    #page4 #elems #elems-elem2>h4{
+        font-size: 1.3vh;
+        font-weight: 600;
+        line-height: 10px;
+        font-family: sans-serif;
+        
+    }
+    #page4 #elems #elems-elem2>h5{
+        font-size: 1vh;
+        font-weight: 400;
+        
+        
+    }
+    #page4 #elems img{
+        width: 50px;
+        height: 60px;
+        object-fit: cover;
+        object-position: top;
+        box-shadow:  black 6px 5px 12px;
+        border-radius: 10%;
+        position: absolute;
+        display: flex;
+        z-index: 9;
+        top: -30%;
+        left: 15%;
+        opacity: 0;
+        transition: all ease 0.1s;
+        animation-name: phonime;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        scale: 0.8;
+    }
+    #page4 #elems img:hover{
+        opacity: 1;
+        scale:1.1;
+        cursor: pointer;
+        /* background: blue; */
+        /* background-color: rgb(53, 57, 57); */
+        
+    }
+    @keyframes phonime {
+        from{
+            transform: translateX(30%);
+            
+        }
+        to{
+            transform: translateX(90%);
+        }
+    }
+    #marque{
+        /* background-color: chartreuse; */
+        width: 100%;
+        /* height: 20%; */
+        white-space: nowrap;
+        overflow-x: hidden;
+        padding: 1vw;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    #marque h3{
+        display: inline-block;
+        font-size: 4vh;
+        font-family: monument;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 700;
+        -webkit-text-stroke:  black 1px;
+        color: transparent;
+        /* background-color: brown; */
+        margin-right: 16px;
+        animation-name: move;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes move {
+        from{
+            transform: translateX(0%);
+        }
+        to{
+        transform: translateX(Calc(-100% - 21px));
+        }
+    }
+    #foter{
+        width: 100%;
+        /* background-color: wheat; */
+        height: 50%;
+        display: flex;
+        border: 2px black;
+        position: absolute;
+        /* left: -8%; */
+    }
+    #foter #infooter{
+        width: 100%;
+        height: 90%;
+        margin: 5vh;
+        /* background-color: rgb(231, 98, 98); */
+        /* display: flex; */
+    }
+    
+    #foter h2{
+        font-family: gun;
+        text-align: center;
+        width: 100%;
+        font-size: 40px;
+        text-shadow: rgb(137, 136, 136) 5px 4px 4px;
+        color: #161515;
+    }
+    #foter #infooter img{
+        width: 130px;
+        height: 200px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 5%;
+        box-shadow: rgb(137, 136, 136) 9px 7px 9px;
+    }
+    #foter #infooter #workelem{
+        display: flex;
+        margin-top: 2vh;
+        /* background-color: aqua; */
+        justify-content: space-between;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    
+    
+    }
+    
+    #foter #infooter #workelem #work h3{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 2vh;
+        font-family: monument;
+        color: #2f2a2a;
+        text-shadow: rgb(137, 136, 136) 9px 7px 9px;
+    
+    }
+    #foter #infooter #workelem #work p{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 2vh;
+        font-family: gun;
+        color: #747474;
+        /* text-shadow: rgb(137, 136, 136) 9px 7px 9px; */
+    
+    }
+    #foter #infooter #workelem #work img{
+        transition: ease 0.5s;
+        scale: 0.9s;
+    }
+    #foter #infooter #workelem #work img:hover{
+        scale: 1.1;
+    }
+    #page5{
+        height: 5%;
+    }
+    
+}
